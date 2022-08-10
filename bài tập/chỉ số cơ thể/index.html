@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let weight= parseInt(prompt("nhập cân nặng"))
+    let height=parseInt(prompt("nhập chiều cao"))
+    let BMI= weight/(height**2)
+    if(BMI<18.5){
+        document.write("gầy")
+    }else if(BMI<=25){
+        document.write("bình thường")
+    }else if(BMI<30){
+        document.write("hơi béo")
+    }else {
+        document.write("béo quá")
+    }
+
+
+
+</script>
+</html>
