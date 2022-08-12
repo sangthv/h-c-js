@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <input type="text" id="demo">
+  <button onclick="check1()">check</button>
+    <script>
+        function check1(){
+            let number= document.getElementById("demo").value;
+            number = parseInt(number)
+            if(number%2==0){
+                alert(" là số chẳn" )
+            } else {
+                alert(" là số lẻ")
+            }
+        }
+
+    </script>
+</body>
+</html>

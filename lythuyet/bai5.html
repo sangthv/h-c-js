@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  user: <input type="text" id="username"> <br>
+  pass: <input type="text" id="passname"> <br>
+        <button onclick="checkLogin()">login</button>
+    <script>
+        function checkLogin() {
+            let user = document.getElementById("username").value
+            let pass = document.getElementById("passname").value
+            if (user === "admin") {
+            if (pass ==123456) {
+                alert("đăng nhập thành công")
+            }
+        }
+            else {
+                alert("xin mời đăng nhập lại")
+            }
+        }
+    </script>
+</body>
+</html>
