@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let ta=["apple", "banana", "orange"]
+        let tv=["táo", "chuối", "cam"];
+        function findByName() {
+            let keyword = prompt("nhập từ vào: ")
+            for (let i = 0; i < ta.length; i++) {
+                if (keyword == ta[i]) {
+                    return i;
+                }
+                return -1;
+            }
+        }
+          function translate(){
+                let i=findByName();
+            if(i==-1){
+                alert("không tìm thấy")
+            }
+            else {
+                alert("từ tiếng việt là: " + tv[i])
+            }
+          }
+          translate();
+
+
+    </script>
+
+</body>
+</html>
